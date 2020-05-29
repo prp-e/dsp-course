@@ -8,3 +8,4 @@ This repository belongs to my online course of Digital Signal Processing.
 
 * [Part 1](https://www.youtube.com/watch?v=iLMJyoXsn9E)
 * [Part 2](https://www.youtube.com/watch?v=JDZLryZlfVY)
+* [Part 3](https://www.youtube.com/watch?v=BS6h_7e45GE)
