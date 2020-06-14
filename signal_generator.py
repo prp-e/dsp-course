@@ -65,7 +65,24 @@ def harmonic_adder3(time, frequency, harmonics=15):
         count += 1 
     
     return wave 
+    
+def harmonic_adder4(time, frequency, harmonics=15):
+    '''Adds harmonics to a sine wave ''' 
+    f = frequency
+    t = np.arange(0, time, 0.01)
 
+    basic_wave = -np.cos(2 * pi * f * t)
+
+    wave = basic_wave 
+    count = 3
+
+    while count < harmonics:
+        if count%2 != 0:
+            harmonic = -np.cos(2 * pi * count * f * t)/ count**2
+            wave = wave + harmonic
+        count += 1 
+    
+    return wave
 time = np.arange(0, 1, 0.0025)
 base_wave = sine_wave(4, 1)
 resulting_wave = harmonic_adder3(4, 1, 100)
